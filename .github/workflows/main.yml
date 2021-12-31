@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.23.3
+      - name: setup node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+      - name: install dependencies
+        run: pnpm install
+      - name: build
+        run: pnpm build
+      - name: deploy
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: pages
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}

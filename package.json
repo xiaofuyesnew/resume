@@ -1,0 +1,34 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "简历生成器",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaofuyesnew/resume.git"
+  },
+  "keywords": [],
+  "author": "Allen Wong <xiaofuyesnew@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xiaofuyesnew/resume/issues"
+  },
+  "homepage": "https://github.com/xiaofuyesnew/resume#readme",
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "antd": "^4.18.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.1.3",
+    "autoprefixer": "^10.4.1",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.8",
+    "vite": "2.7.10"
+  }
+}
