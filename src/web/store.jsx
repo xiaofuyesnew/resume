@@ -2,6 +2,7 @@ import { createContext, useReducer } from 'react'
 
 const initialState = {
   data: {},
+  template: 'side_by_side',
 }
 
 const reducer = (state, action) => {
