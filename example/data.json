@@ -1,14 +1,13 @@
 {
-  "avatar": { "hidden": false },
+  "avatar": { "show": false, "src": "" },
   "profile": {
     "name": "姓名",
     "email": "736****86@qq.com",
     "mobile": "156********",
     "github": "https://github.com/visiky",
-    "zhihu": "https://www.zhihu.com/people/visiky",
     "workExpYear": ""
   },
-  "educationList": [
+  "education": [
     {
       "edu_time": ["2014.09.01", "2018.06.30"],
       "school": "华南理工大学",

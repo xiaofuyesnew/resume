@@ -19,3 +19,5 @@
 [react 打印区域的处理](https://www.ixiqin.com/2021/11/tailwindcss-how-to-control-the-printing-effect/)
 
 [React DnD](https://react-dnd.github.io/react-dnd/)
+
+[用页面生成json文件](https://www.zhangxinxu.com/wordpress/2017/07/js-text-string-download-as-html-json-file/)
