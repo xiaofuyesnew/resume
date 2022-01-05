@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { render } from 'react-dom'
-// import 'tdesign-react/es/style/index.css'
 import './index.css'
+import 'antd/dist/antd.css'
 import App from './App'
 
 render(
