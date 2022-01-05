@@ -16,7 +16,7 @@ export const Context = createContext({
   dispatch: () => null,
 })
 
-const Provider = ({ children }) => {
+export const Provider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   return (
